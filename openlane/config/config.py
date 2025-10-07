@@ -832,7 +832,7 @@ class Config(GenericImmutableDict[str, Any]):
         ), "Fatal error: STD_CELL_LIBRARY default value not set by PDK."
 
         scl_config_path = os.path.join(
-            pdkpath, "libs.tech", "openlane", scl, "config.tcl"
+            pdkpath, "libs.tech", scl, "openlane", "config.tcl"
         )
 
         scl_env = migrate_old_config(
